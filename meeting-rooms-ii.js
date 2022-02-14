@@ -1,10 +1,4 @@
 const maxMeetingRooms = (A) => {
-    // starts: sort the array based on start times
-    // ends: sort the array based on end times
-    // meetings = [start[0]], j = 0, res = 1
-    // if ends[j].end <= meetings[0].end : j++
-    // else meetings[0].end = ends[j].end : j++          
-    // return meetings.length
     if (!A || !A.length) {
         return 0;
     }
@@ -37,7 +31,7 @@ const testCases = [
         [12, 19],
         [13, 19],
         [5, 9]
-    ] //3
+    ] //4
 ];
 for (const testCase of testCases) {
     console.log(maxMeetingRooms(testCase));
